@@ -62,6 +62,7 @@ final class Collection implements Common\Field\Collection {
 	 *
 	 * @return ArrayIterator Iterator object.
 	 */
+  #[\ReturnTypeWillChange]
 	public function getIterator() {
 
 		return new ArrayIterator( $this->fields );

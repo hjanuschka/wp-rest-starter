@@ -60,6 +60,7 @@ final class Collection implements Common\Route\Collection {
 	 *
 	 * @return ArrayIterator Iterator object.
 	 */
+  #[\ReturnTypeWillChange]
 	public function getIterator() {
 
 		return new ArrayIterator( $this->routes );
